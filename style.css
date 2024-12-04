@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px 5px grey;
+    position: relative;
+}
+
+.outter-num{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    /* background-color: red; */
+    height: 95%;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.one{
+    transform: rotate(30deg);
+}
+
+.one span{
+    position: absolute;
+    transform: rotate(-30deg);
+}
+
+.two{
+    transform: rotate(60deg);
+}
+
+.two span{
+    position: absolute;
+    transform: rotate(-60deg);
+}
+
+.three{
+    transform: rotate(90deg);
+}
+
+.three span{
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.four{
+    transform: rotate(120deg);
+}
+
+.four span{
+    position: absolute;
+    transform: rotate(-120deg);
+}
+
+.five{
+    transform: rotate(150deg);
+}
+
+.five span{
+    position: absolute;
+    transform: rotate(-150deg);
+}
+
+.six{
+    transform: rotate(180deg);
+}
+
+.six span{
+    position: absolute;
+    transform: rotate(-180deg);
+}
+
+.seven{
+    transform: rotate(210deg);
+}
+
+.seven span{
+    position: absolute;
+    transform: rotate(-210deg);
+}
+
+.eight{
+    transform: rotate(240deg);
+}
+
+.eight span{
+    position: absolute;
+    transform: rotate(-240deg);
+}
+
+.nine{
+    transform: rotate(270deg);
+}
+
+.nine span{
+    position: absolute;
+    transform: rotate(-270deg);
+}
+
+.ten{
+    transform: rotate(300deg);
+}
+
+.ten span{
+    position: absolute;
+    transform: rotate(-300deg);
+}
+
+.eleven{
+    transform: rotate(330deg);
+}
+
+.eleven span{
+    position: absolute;
+    transform: rotate(-330deg);
+}
+
+.three-hands {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.second{
+    height: 35%;
+    /* padding-top: 100px; */
+    width: 5px;
+    background-color: red;
+    transform:translateY(-50%);
+    border-radius: 3px;
+    z-index: 99;
+    position: absolute;
+}
+
+.minute{
+    height: 35%;
+    width: 7px;
+    background-color: black;
+    transform:translateY(-50%);
+    border-radius: 3px;
+    z-index: 88;
+    position: absolute;
+}
+
+.hours{
+    height: 30%;
+    width: 10px;
+    background-color: black;
+    transform:translateY(-50%);
+    border-radius: 3px;
+    z-index: 77;
+    position: absolute;
+}
+
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    z-index: 90;
+    border-radius: 50%;
+}
+
+.btn{
+margin-top: 30px;
+}
+
+button{
+    font-size: 2rem;
+    padding: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 1.5rem;
+}
+
+button:active{
+    scale: 0.95;
+}
